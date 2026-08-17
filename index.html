@@ -1,735 +1,1236 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <title>Athletic Pro</title>
-  </head>
-  <body>
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg" style="background-color: #088dec" data-bs-theme="light">
-      <div class="container-fluid">
-        <a class="navbar-brand" style="color: aliceblue" href="#">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Qlj4PRHlC9onzMkYtK0BCWYuZg-hB5p2Bg1VKWSWHQ&s=10"
-            alt="Logo"
-            width="30"
-            height="24"
-            class="d-inline-block align-text-top"
-          />
-          Athletic Pro
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link active" href="#" style="color: aliceblue">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#productos" style="color: aliceblue">Productos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contacto" style="color: aliceblue">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    
-    <!-- Sección principal dividida -->
-    <section class="container mt-5">
-      <div class="row align-items-center">
-        <!-- Texto -->
-        <div class="col-md-6 text-center text-md-start">
-          <h1 style="color:#088dec;">Encuentra tu pasión deportiva</h1>
-          <p>Selecciona tu disciplina favorita y descubre productos diseñados para tu rendimiento.</p>
-        </div>
-        <!-- Imagen -->
-        <div class="col-md-6 text-center">
-          <img src="Img\deporte.png"
-            alt="Deportes"
-            class="img-fluid rounded shadow-sm" />
-        </div>
-      </div>
-    </section>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+			crossorigin="anonymous"
+		/>
+		<title>Athletic Pro</title>
+	</head>
+	<body>
+		<!-- NavBar -->
+		<nav
+			class="navbar navbar-expand-lg"
+			style="
+				background-color: #088dec;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: 1000;
+			"
+			data-bs-theme="light"
+		>
+			<div class="container-fluid">
+				<a class="navbar-brand" style="color: aliceblue" href="#">
+					<img
+						src="Img/logo.png"
+						alt="Logo"
+						width="50"
+						height="37"
+						class="d-inline-block align-text"
+					/>
+					Athletic Pro
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" href="#" style="color: aliceblue"
+								>Inicio</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="#productos_general"
+								style="color: aliceblue"
+								>Productos</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="#contacto_datos"
+								style="color: aliceblue"
+								>Contacto</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-    <!-- Sección de productos con botones de deportes -->
-    <main class="container mt-5" id="productos">
-      <h2>Productos</h2>
-      <p>Aquí puedes encontrar artículos para cada disciplina deportiva:</p>
-      <div class="d-flex justify-content-center flex-wrap mt-3">
-        <a href="#natacion" class="btn btn-outline-primary m-2">Natación</a>
-        <a href="#patinaje" class="btn btn-outline-success m-2">Patinaje</a>
-        <a href="#atletismo" class="btn btn-outline-warning m-2">Atletismo</a>
-        <a href="#basketball" class="btn btn-outline-danger m-2">Basketball</a>
-      </div>
-    </main>
-  
-  <!-- CONTENEDOR PRINCIPAL -->
-  <div class="container my-5">
-    
-    <div class="text-center mb-5">
-      <span class="badge bg-danger text-uppercase px-3 py-2 mb-2">Equipamiento</span>
-      <h1 class="fw-bold text-uppercase display-6"></h1>
-      <p class="text-muted">Encuentra los mejores productos seleccionados para cada disciplina deportiva.</p>
-    </div>
-    <div class="row g-4">
-      <!-- CATEGORÍA: PATINAJE (VERDE) -->
-      <div id="patinaje" class="col-12 col-md-6 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm card-category">
-          <div class="card-header bg-success text-white py-3 text-center">
-            <i class="fs-2 d-block mb-1">🛼</i>
-            <h2 class="h5 fw-bold mb-0 text-uppercase">Patinaje</h2>
-          </div>
-          <div class="card-body">
-            <ul class="list-group list-group-flush small">
-              <li class="list-group-item px-0 py-2">
-                <span class="fw-bold d-block text-dark">Patines profesionales</span>
-                <span class="text-muted">Alta estabilidad y ruedas de precisión.</span>
-              </li>
-              <li class="list-group-item px-0 py-2">
-                <span class="fw-bold d-block text-dark">Casco de seguridad</span>
-                <span class="text-muted">Protección esencial para entrenamientos.</span>
-              </li>
-              <li class="list-group-item px-0 py-2">
-                <span class="fw-bold d-block text-dark">Rodilleras y coderas</span>
-                <span class="text-muted">Evitan lesiones en caídas.</span>
-              </li>
-              <li class="list-group-item px-0 py-2">
-                <span class="fw-bold d-block text-dark">Ropa deportiva flexible</span>
-                <span class="text-muted">Comodidad y libertad de movimiento.</span>
-              </li>
-            </ul>
-          </div>
-          <div class="card-footer bg-transparent border-0 pb-3">
-              <a href="#productos-patinaje" class="btn btn-outline-success btn-sm w-100 fw-semibold">Ver Productos</a>          
-          </div>
-        </div>
-      </div>
-      <!-- CATEGORÍA: ATLETISMO (AMARILLO) -->
-      <div id="atletismo" class="col-12 col-md-6 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm card-category">
-          <div class="card-header bg-warning text-dark py-3 text-center">
-            <i class="fs-2 d-block mb-1">⏱️</i>
-            <h2 class="h5 fw-bold mb-0 text-uppercase">Atletismo</h2>
-          </div>
-          <div class="card-body">
-            <ul class="list-group list-group-flush small">
-              <li class="list-group-item px-0 py-2">
-                <span class="fw-bold d-block text-dark">Zapatillas de velocidad</span>
-                <span class="text-muted">Ligeras y con tracción óptima.</span>
-              </li>
-              <li class="list-group-item px-0 py-2">
-                <span class="fw-bold d-block text-dark">Cronómetro digital</span>
-                <span class="text-muted">Control de tiempos y rendimiento.</span>
-              </li>
-              <li class="list-group-item px-0 py-2">
-                <span class="fw-bold d-block text-dark">Camiseta técnica transpirable</span>
-                <span class="text-muted">Regula temperatura corporal.</span>
-              </li>
-              <li class="list-group-item px-0 py-2">
-                <span class="fw-bold d-block text-dark">Botella deportiva</span>
-                <span class="text-muted">Hidratación rápida durante el entrenamiento.</span>
-              </li>
-            </ul>
-          </div>
-          <div class="card-footer bg-transparent border-0 pb-3">
-            <a href="#productos-atletismo" class="btn btn-outline-warning text-dark btn-sm w-100 fw-semibold">Ver Productos</a>
-          </div>
-        </div>
-      </div>
-      <!-- CATEGORÍA: BASKETBALL (ROJO) -->
-      <div id="basketball" class="col-12 col-md-6 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm card-category">
-          <div class="card-header bg-danger text-white py-3 text-center">
-            <i class="fs-2 d-block mb-1">🏀</i>
-            <h2 class="h5 fw-bold mb-0 text-uppercase">Basketball</h2>
-          </div>
-          <div class="card-body">
-            <ul class="list-group list-group-flush small">
-              <li class="list-group-item px-0 py-2">
-                <span class="fw-bold d-block text-dark">Balón oficial</span>
-                <span class="text-muted">Material de alta resistencia y agarre.</span>
-              </li>
-              <li class="list-group-item px-0 py-2">
-                <span class="fw-bold d-block text-dark">Tenis de basketball</span>
-                <span class="text-muted">Soporte y amortiguación para saltos.</span>
-              </li>
-              <li class="list-group-item px-0 py-2">
-                <span class="fw-bold d-block text-dark">Muñequeras deportivas</span>
-                <span class="text-muted">Absorben el sudor y protegen articulaciones.</span>
-              </li>
-              <li class="list-group-item px-0 py-2">
-                <span class="fw-bold d-block text-dark">Uniforme ligero</span>
-                <span class="text-muted">Diseño cómodo y transpirable.</span>
-              </li>
-            </ul>
-          </div>
-          <div class="card-footer bg-transparent border-0 pb-3">
-            <a href="#productos-basketball" class="btn btn-outline-danger btn-sm w-100 fw-semibold">Ver Productos</a>
-          </div>
-        </div>
-      </div>
-      <!-- CATEGORÍA: NATACIÓN (AZUL) -->
-      <div id="natacion" class="col-12 col-md-6 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm card-category">
-          <div class="card-header bg-primary text-white py-3 text-center">
-            <i class="fs-2 d-block mb-1">🏊🏻‍♂️</i>
-            <h2 class="h5 fw-bold mb-0 text-uppercase">Natación</h2>
-          </div>
-          <div class="card-body">
-            <ul class="list-group list-group-flush small">
-              <li class="list-group-item px-0 py-2">
-                <span class="fw-bold d-block text-dark">Goggles antiempañantes</span>
-                <span class="text-muted">Visión clara bajo el agua.</span>
-              </li>
-              <li class="list-group-item px-0 py-2">
-                <span class="fw-bold d-block text-dark">Aletas de entrenamiento</span>
-                <span class="text-muted">Mejoran técnica de pataleo y fuerza.</span>
-              </li>
-              <li class="list-group-item px-0 py-2">
-                <span class="fw-bold d-block text-dark">Traje de baño de competencia</span>
-                <span class="text-muted">Diseño hidrodinámico de alto ajuste.</span>
-              </li>
-              <li class="list-group-item px-0 py-2">
-                <span class="fw-bold d-block text-dark">Toalla de microfibra</span>
-                <span class="text-muted">Secado ultra rápido y ligera.</span>
-              </li>
-            </ul>
-          </div>
-          <div class="card-footer bg-transparent border-0 pb-3">
-            <a href="#productos-natacion" class="btn btn-outline-primary btn-sm w-100 fw-semibold">Ver Productos</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+		<!-- Sección principal dividida -->
+		<section class="container mt-5">
+			<div class="row align-items-center" style="padding-top: 50px">
+				<!-- Texto -->
+				<div class="col-md-6 text-center text-md-start">
+					<h1 style="color: #088dec; text-align: center">
+						Encuentra tu pasión deportiva
+					</h1>
+					<p style="padding-top: 20px; text-align: center">
+						Bienvenido a Athletic Pro, la tienda especializada en equipamiento y
+						complementos para básquet, atletismo, patinaje artístico sobre
+						ruedas y basketball.
+					</p>
+					<p style="text-align: center">
+						Nuestro compromiso es ofrecerte productos de alta calidad que
+						optimicen tu rendimiento, te brinden comodidad y mantengan viva tu
+						pasión en cada entrenamiento y competencia. Aquí encontrarás desde
+						accesorios esenciales hasta indumentaria diseñada para acompañarte
+						en tu camino deportivo.
+					</p>
+					<h3 style="text-align: center; color: #088dec">
+						Athletic Pro – Rendimiento, estilo y pasión en cada movimiento.
+					</h3>
+				</div>
+				<!-- Imagen -->
+				<div class="col-md-6 text-center">
+					<img
+						src="Img\deporte.png"
+						alt="Deportes"
+						class="img-fluid rounded shadow-sm"
+					/>
+				</div>
+			</div>
+		</section>
 
-  <!-- Productos - Carruseles -->
+		<!-- CONTENEDOR PRINCIPAL -->
+		<div
+			class="container my-5"
+			style="padding-top: 100px"
+			id="productos_general"
+		>
+			<div class="text-center mb-5">
+				<span class="badge bg-danger text-uppercase px-3 py-2 mb-2"
+					>Equipamiento</span
+				>
+				<h1 class="fw-bold text-uppercase display-6"></h1>
+				<p class="text-muted">
+					Encuentra los mejores productos seleccionados para cada disciplina
+					deportiva.
+				</p>
+			</div>
+			<div class="row g-4">
+				<!-- CATEGORÍA: PATINAJE (VERDE) -->
+				<div id="patinaje" class="col-12 col-md-6 col-lg-3">
+					<div class="card h-100 border-0 shadow-sm card-category">
+						<div class="card-header bg-success text-white py-3 text-center">
+							<i class="fs-2 d-block mb-1">🛼</i>
+							<h2 class="h5 fw-bold mb-0 text-uppercase">Patinaje</h2>
+						</div>
+						<div class="card-body">
+							<ul class="list-group list-group-flush small">
+								<li class="list-group-item px-0 py-2">
+									<span class="fw-bold d-block text-dark"
+										>Patines profesionales</span
+									>
+									<span class="text-muted"
+										>Alta estabilidad y ruedas de precisión.</span
+									>
+								</li>
+								<li class="list-group-item px-0 py-2">
+									<span class="fw-bold d-block text-dark"
+										>Casco de seguridad</span
+									>
+									<span class="text-muted"
+										>Protección esencial para entrenamientos.</span
+									>
+								</li>
+								<li class="list-group-item px-0 py-2">
+									<span class="fw-bold d-block text-dark"
+										>Rodilleras y coderas</span
+									>
+									<span class="text-muted">Evitan lesiones en caídas.</span>
+								</li>
+								<li class="list-group-item px-0 py-2">
+									<span class="fw-bold d-block text-dark"
+										>Ropa deportiva flexible</span
+									>
+									<span class="text-muted"
+										>Comodidad y libertad de movimiento.</span
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="card-footer bg-transparent border-0 pb-3">
+							<a
+								href="#productos-patinaje"
+								class="btn btn-outline-success btn-sm w-100 fw-semibold"
+								>Ver Productos</a
+							>
+						</div>
+					</div>
+				</div>
+				<!-- CATEGORÍA: ATLETISMO (AMARILLO) -->
+				<div id="atletismo" class="col-12 col-md-6 col-lg-3">
+					<div class="card h-100 border-0 shadow-sm card-category">
+						<div class="card-header bg-warning text-dark py-3 text-center">
+							<i class="fs-2 d-block mb-1">⏱️</i>
+							<h2 class="h5 fw-bold mb-0 text-uppercase">Atletismo</h2>
+						</div>
+						<div class="card-body">
+							<ul class="list-group list-group-flush small">
+								<li class="list-group-item px-0 py-2">
+									<span class="fw-bold d-block text-dark"
+										>Zapatillas de velocidad</span
+									>
+									<span class="text-muted">Ligeras y con tracción óptima.</span>
+								</li>
+								<li class="list-group-item px-0 py-2">
+									<span class="fw-bold d-block text-dark"
+										>Cronómetro digital</span
+									>
+									<span class="text-muted"
+										>Control de tiempos y rendimiento.</span
+									>
+								</li>
+								<li class="list-group-item px-0 py-2">
+									<span class="fw-bold d-block text-dark"
+										>Camiseta técnica transpirable</span
+									>
+									<span class="text-muted">Regula temperatura corporal.</span>
+								</li>
+								<li class="list-group-item px-0 py-2">
+									<span class="fw-bold d-block text-dark"
+										>Botella deportiva</span
+									>
+									<span class="text-muted"
+										>Hidratación rápida durante el entrenamiento.</span
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="card-footer bg-transparent border-0 pb-3">
+							<a
+								href="#productos-atletismo"
+								class="btn btn-outline-warning text-dark btn-sm w-100 fw-semibold"
+								>Ver Productos</a
+							>
+						</div>
+					</div>
+				</div>
+				<!-- CATEGORÍA: BASKETBALL (ROJO) -->
+				<div id="basketball" class="col-12 col-md-6 col-lg-3">
+					<div class="card h-100 border-0 shadow-sm card-category">
+						<div class="card-header bg-danger text-white py-3 text-center">
+							<i class="fs-2 d-block mb-1">🏀</i>
+							<h2 class="h5 fw-bold mb-0 text-uppercase">Basketball</h2>
+						</div>
+						<div class="card-body">
+							<ul class="list-group list-group-flush small">
+								<li class="list-group-item px-0 py-2">
+									<span class="fw-bold d-block text-dark">Balón oficial</span>
+									<span class="text-muted"
+										>Material de alta resistencia y agarre.</span
+									>
+								</li>
+								<li class="list-group-item px-0 py-2">
+									<span class="fw-bold d-block text-dark"
+										>Tenis de basketball</span
+									>
+									<span class="text-muted"
+										>Soporte y amortiguación para saltos.</span
+									>
+								</li>
+								<li class="list-group-item px-0 py-2">
+									<span class="fw-bold d-block text-dark"
+										>Muñequeras deportivas</span
+									>
+									<span class="text-muted"
+										>Absorben el sudor y protegen articulaciones.</span
+									>
+								</li>
+								<li class="list-group-item px-0 py-2">
+									<span class="fw-bold d-block text-dark">Uniforme ligero</span>
+									<span class="text-muted">Diseño cómodo y transpirable.</span>
+								</li>
+							</ul>
+						</div>
+						<div class="card-footer bg-transparent border-0 pb-3">
+							<a
+								href="#productos-basketball"
+								class="btn btn-outline-danger btn-sm w-100 fw-semibold"
+								>Ver Productos</a
+							>
+						</div>
+					</div>
+				</div>
+				<!-- CATEGORÍA: NATACIÓN (AZUL) -->
+				<div id="natacion" class="col-12 col-md-6 col-lg-3">
+					<div class="card h-100 border-0 shadow-sm card-category">
+						<div class="card-header bg-primary text-white py-3 text-center">
+							<i class="fs-2 d-block mb-1">🏊🏻‍♂️</i>
+							<h2 class="h5 fw-bold mb-0 text-uppercase">Natación</h2>
+						</div>
+						<div class="card-body">
+							<ul class="list-group list-group-flush small">
+								<li class="list-group-item px-0 py-2">
+									<span class="fw-bold d-block text-dark"
+										>Goggles antiempañantes</span
+									>
+									<span class="text-muted">Visión clara bajo el agua.</span>
+								</li>
+								<li class="list-group-item px-0 py-2">
+									<span class="fw-bold d-block text-dark"
+										>Aletas de entrenamiento</span
+									>
+									<span class="text-muted"
+										>Mejoran técnica de pataleo y fuerza.</span
+									>
+								</li>
+								<li class="list-group-item px-0 py-2">
+									<span class="fw-bold d-block text-dark"
+										>Traje de baño de competencia</span
+									>
+									<span class="text-muted"
+										>Diseño hidrodinámico de alto ajuste.</span
+									>
+								</li>
+								<li class="list-group-item px-0 py-2">
+									<span class="fw-bold d-block text-dark"
+										>Toalla de microfibra</span
+									>
+									<span class="text-muted">Secado ultra rápido y ligera.</span>
+								</li>
+							</ul>
+						</div>
+						<div class="card-footer bg-transparent border-0 pb-3">
+							<a
+								href="#productos-natacion"
+								class="btn btn-outline-primary btn-sm w-100 fw-semibold"
+								>Ver Productos</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Carrusel Patinaje -->
-    <section id="productos-patinaje" class="productos-categoria container my-5">
-      <div class="text-center mb-4">
-        <h2>Patinaje</h2>
-      </div>
-      <div id="carouselPatinaje" class="carousel slide carousel-dark">
-        <div class="carousel-inner">
-          <!-- Primer grupo: 3 productos -->
-          <div class="carousel-item active">
-            <div class="row g-4 justify-content-center">
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://m.media-amazon.com/images/I/81MduxuxPaL._AC_SX679_.jpg " class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Patines</h5>
-                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                      <span class="text-p">$1200</span>
-                      <span class="text-muted small"> ⭐4.8</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqX6ZGJn0vCaN_aymgdtz6H9Z3jgsZhLhai6tj01V-0A&s=10 " class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Ruedas</h5>
-                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                      <span class="text-p">$800</span>
-                      <span class="text-muted small"> ⭐5.0</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd8Od2StjVcmyLGL1b3jLkGmj8cod-RpiTCqrjgm9pHQ&s=10 " class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Rodilleras y coderas</h5>
-                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                      <span class="text-p">$456</span>
-                      <span class="text-muted small"> ⭐4.8</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Segundo grupo: 2 productos -->
-          <div class="carousel-item">
-            <div class="row g-4 justify-content-center">
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://m.media-amazon.com/images/I/51Uejz-7XJL._AC_UF894,1000_QL80_.jpg" class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Casco</h5>
-                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                      <span class="text-p">$900</span>
-                      <span class="text-muted small"> ⭐4.0</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Producto 5</h5>
-                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                      <span class="text-p">$600</span>
-                      <span class="text-muted small"> ⭐Num estrellas</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Controles -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselPatinaje"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselPatinaje"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
-    </section>
+		<!-- Productos - Carruseles -->
 
+		<!-- Carrusel Patinaje -->
+		<section id="productos-patinaje" class="productos-categoria container my-5">
+			<div class="text-center mb-4">
+				<h2>Patinaje</h2>
+			</div>
+			<div id="carouselPatinaje" class="carousel slide carousel-dark">
+				<div class="carousel-inner">
+					<!-- Primer grupo: 3 productos -->
+					<div class="carousel-item active">
+						<div class="row g-4 justify-content-center">
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://m.media-amazon.com/images/I/81MduxuxPaL._AC_SX679_.jpg "
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">Patines</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											Los patines de alto rendimiento están diseñados para
+											ofrecer estabilidad, control y comodidad en cada
+											movimiento.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$1200</span>
+											<span class="text-muted small"> ⭐4.8</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqX6ZGJn0vCaN_aymgdtz6H9Z3jgsZhLhai6tj01V-0A&s=10 "
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">Ruedas</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											Las ruedas de repuesto están diseñadas para mantener el
+											máximo rendimiento y durabilidad de tus patines.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$800</span>
+											<span class="text-muted small"> ⭐5.0</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd8Od2StjVcmyLGL1b3jLkGmj8cod-RpiTCqrjgm9pHQ&s=10 "
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">Rodilleras y coderas</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											El kit de protección incluye rodilleras, coderas y
+											muñequeras ergonómicas que garantizan seguridad sin
+											limitar la movilidad.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$456</span>
+											<span class="text-muted small"> ⭐4.8</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Segundo grupo: 2 productos -->
+					<div class="carousel-item">
+						<div class="row g-4 justify-content-center">
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://m.media-amazon.com/images/I/51Uejz-7XJL._AC_UF894,1000_QL80_.jpg"
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">Casco</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											El casco de seguridad para patinaje está diseñado para
+											ofrecer máxima protección y confort durante tus
+											entrenamientos y competencias.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$900</span>
+											<span class="text-muted small"> ⭐4.0</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://m.media-amazon.com/images/I/81UnLSTj4YL.jpg "
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">Maleta para Patines</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											La bolsa para patines está diseñada para transportar tu
+											equipo con comodidad y estilo.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$600</span>
+											<span class="text-muted small"> ⭐4.6</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Controles -->
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselPatinaje"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon"></span>
+					<span class="visually-hidden">Anterior</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselPatinaje"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon"></span>
+					<span class="visually-hidden">Siguiente</span>
+				</button>
+			</div>
+		</section>
 
+		<!-- Carrusel Natación -->
+		<section id="productos-natacion" class="productos-categoria container my-5">
+			<div class="text-center mb-4">
+				<h2>Natación</h2>
+			</div>
+			<div id="carouselNatacion" class="carousel slide carousel-dark">
+				<div class="carousel-inner">
+					<!-- Primer grupo: 3 productos -->
+					<div class="carousel-item active">
+						<div class="row g-4 justify-content-center">
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNt7ARlQqNOhkS2HzTXWEIH00INWZjPM-VO7OUAG3RTw&s=10"
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">Goggles</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											Los goggles antiempañantes ofrecen una visión clara y
+											nítida bajo el agua gracias a su tecnología de lentes
+											tratadas contra el vaho.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$600</span>
+											<span class="text-muted small"> ⭐4.5</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGF9BCRH0_TSl227Fmb5Iro7lDzuwnZXs-AXh0lQ53MQ&s=10"
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">Aletas de natacion</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											Las aletas de entrenamiento están diseñadas para mejorar
+											la técnica y fortalecer los músculos de las piernas.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$800</span>
+											<span class="text-muted small"> ⭐4.8</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGuOgBLuau9T3H9RpJCNHlPc1U80DkQeE0B-l8OFJa1w&s=10"
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">Traje de baño</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											El traje de baño deportivo combina rendimiento y confort
+											con un diseño ajustado que reduce la resistencia al agua.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$500</span>
+											<span class="text-muted small"> ⭐4</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Segundo grupo: 2 productos -->
+					<div class="carousel-item">
+						<div class="row g-4 justify-content-center">
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwOFog6Fpu2L55TL8AaQebBj9KqIUca6N6FThDkYuCAw&s=10"
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">Toallas natacion</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											La toalla de microfibra para natación ofrece un secado
+											rápido y eficiente gracias a su tejido ultraligero y
+											absorbente.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$250</span>
+											<span class="text-muted small"> ⭐4.6</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://arenaswim.com.mx/cdn/shop/files/a3c49fe6-f0b6-40ae-9c7c-7d8bc6356a51.jpg?v=1756133930 "
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">Gorro de Natacion</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											El gorro de natación está diseñado para mejorar la
+											hidrodinámica y proteger el cabello del cloro.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$400</span>
+											<span class="text-muted small"> ⭐4.2</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Controles -->
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselNatacion"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon"></span>
+					<span class="visually-hidden">Anterior</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselNatacion"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon"></span>
+					<span class="visually-hidden">Siguiente</span>
+				</button>
+			</div>
+		</section>
 
-    <!-- Carrusel Natación -->
-    <section id="productos-natacion" class="productos-categoria container my-5">
-      <div class="text-center mb-4">
-        <h2>Natación</h2>
-      </div>
-      <div id="carouselNatacion" class="carousel slide carousel-dark">
-        <div class="carousel-inner">
-          <!-- Primer grupo: 3 productos -->
-          <div class="carousel-item active">
-            <div class="row g-4 justify-content-center">
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNt7ARlQqNOhkS2HzTXWEIH00INWZjPM-VO7OUAG3RTw&s=10" class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Goggles antiempañantes</h5>
-                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                   
-                       <span class="text-muted small"> ⭐Num estrellas</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGF9BCRH0_TSl227Fmb5Iro7lDzuwnZXs-AXh0lQ53MQ&s=10" class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Aletas de natacion</h5>
-                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                      <span class="text-warning">estrellas</span> 
-                       <span class="text-muted small"> ⭐Num estrellas</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGuOgBLuau9T3H9RpJCNHlPc1U80DkQeE0B-l8OFJa1w&s=10" class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Traje de baño</h5>
-                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                   
-                       <span class="text-muted small"> ⭐Num estrellas</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Segundo grupo: 2 productos -->
-          <div class="carousel-item">
-            <div class="row g-4 justify-content-center">
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwOFog6Fpu2L55TL8AaQebBj9KqIUca6N6FThDkYuCAw&s=10" class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Toallas natacion</h5>
-                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                      <span class="text-warning">estrellas</span> 
-                       <span class="text-muted small"> ⭐Num estrellas</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Producto 5</h5>
-                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                      <span class="text-warning">estrellas</span> 
-                       <span class="text-muted small"> ⭐Num estrellas</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Controles -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselNatacion"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselNatacion"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
-    </section>
+		<!-- Carrusel Basketball -->
+		<section
+			id="productos-basketball"
+			class="productos-categoria container my-5"
+		>
+			<div class="text-center mb-4">
+				<h2>Basketball</h2>
+			</div>
+			<div id="carouselBasketball" class="carousel slide carousel-dark">
+				<div class="carousel-inner">
+					<!-- Primer grupo: 3 productos -->
+					<div class="carousel-item active">
+						<div class="row g-4 justify-content-center">
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://contents.mediadecathlon.com/p2879501/k$5cb026f63716fb3fab53038700780172/picture.jpg?format=auto&f=969x0"
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">basketball: balon oficial</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											El balón oficial de basketball está diseñado para ofrecer
+											un agarre superior y un rebote constante en cada jugada.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$600</span>
+											<span class="text-muted small"> ⭐5</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://th.bing.com/th/id/R.874298276998f8ff492214260f6ddbab?rik=U3Rvg1bzTMtr8Q&pid=ImgRaw&r=0 "
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">tenis basketball</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											Los tenis de basketball combinan amortiguación,
+											estabilidad y estilo para maximizar tu rendimiento en la
+											cancha.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$1500</span>
+											<span class="text-muted small"> ⭐4.6</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://tse3.mm.bing.net/th/id/OIP.NQSpF-7bwagPOJBtdnFp1wAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">Muñequeras deportivas</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											Las muñequeras deportivas son el accesorio esencial para
+											mantener la comodidad y el rendimiento durante el juego.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$200</span>
+											<span class="text-muted small"> ⭐4.3</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Segundo grupo: 2 productos -->
+					<div class="carousel-item">
+						<div class="row g-4 justify-content-center">
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://image.made-in-china.com/2f0j00RNLiEqMhEcom/Basketball-Uniform-Suit-Men-prime-S-Custom-Printing-Jersey-Sports-Quick-Drying-Vest-Custom-Made-Training-Competition-Team-Uniforms-Custom-Made.jpg"
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">Uniforme deportivo</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											El uniforme deportivo para basketball combina comodidad,
+											rendimiento y estilo en cada partido.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$800</span>
+											<span class="text-muted small"> ⭐4.1</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://acdn-us.mitiendanube.com/stores/002/609/666/products/241-e69cbda6c96ba6849b17099313075882-1024-1024.webp "
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">Rodilleras Basketball</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											Las rodilleras deportivas están diseñadas para brindar
+											protección y soporte durante los entrenamientos y partidos
+											de basketball.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$400</span>
+											<span class="text-muted small"> ⭐4.7</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Controles -->
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselBasketball"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon"></span>
+					<span class="visually-hidden">Anterior</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselBasketball"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon"></span>
+					<span class="visually-hidden">Siguiente</span>
+				</button>
+			</div>
+		</section>
 
+		<!-- Carrusel Atletismo -->
+		<section
+			id="productos-atletismo"
+			class="productos-categoria container my-5"
+		>
+			<div class="text-center mb-4">
+				<h2>Atletismo</h2>
+			</div>
+			<div id="carouselAtletismo" class="carousel slide carousel-dark">
+				<div class="carousel-inner">
+					<!-- Primer grupo: 3 productos -->
+					<div class="carousel-item active">
+						<div class="row g-4 justify-content-center">
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ_1-sHlBw240gvExlAljE1mkvChZm3MM2D9XH5QdDnFuRQg_rwy1bFVO2kG68MhVkHO0cq2i7jctj85CXJinDg0wxE2HYyJGySdTWzXoE44zsnXSJ9gEAIYA"
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">
+											Zapatillas Con Placa De Fibra De Carbono
+										</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											Composición del exterior: 80% lienzo Composición de la
+											suela: 40% de poliuretano Materiales de palma: Espuma EVA
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$1530</span>
+											<span class="text-muted small"> ⭐4.1</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
 
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://http2.mlstatic.com/D_NQ_NP_2X_774581-MLA112984655578_072026-F.webp"
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">
+											Smartwatch Llamadas GPS Monitoreo Salud
+										</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											Brújula, GPS (Sistema de Posicionamiento Global), ritmo
+											cardiaco, oxigeno en sangre, monitoreo de sueno, sensor de
+											gravedad, altavoz, microfono y motor de vibracion.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$1456</span>
+											<span class="text-muted">⭐ 4.8</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
 
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://www.pangeamovements.com/cdn/shop/files/773b3ca469_480x.webp?v=1786130161"
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">SOAR Sudadera Running</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											Mañanas frías. Arranques rápidos. El Tempo Top está
+											diseñado para rendir en el frío: ligero, ajustado al
+											cuerpo y con alta transpirabilidad cuando el ritmo sube.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$500</span>
+											<span class="text-muted small"> ⭐4.0</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Segundo grupo: 2 productos -->
+					<div class="carousel-item">
+						<div class="row g-4 justify-content-center">
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://m.media-amazon.com/images/I/51JMCcVxN9L._AC_SX679_.jpg"
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">
+											Cinturón para Correr con Botella de Agua
+										</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											Este cinturón para correr está hecho de Neopreno, es un
+											tejido ligero que respira bien mientras que todavía logra
+											mantener un gran estiramiento.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$350</span>
+											<span class="text-muted small"> ⭐3.8</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="card h-100 shadow-sm">
+									<img
+										src="https://m.media-amazon.com/images/I/31PDgrQMrgL._AC_SY350_.jpg"
+										class="card-img-top img_card"
+										alt="Imagen del producto"
+									/>
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title">
+											Lentes de Atletismo antireflejantes
+										</h5>
+										<p
+											class="card-text"
+											style="height: 150px; margin-top: 10px"
+										>
+											Los lentes deportivos están diseñados para ofrecer
+											protección, comodidad y rendimiento durante tus
+											entrenamientos y competencias al aire libre.
+										</p>
+										<hr />
+										<p
+											id="precio"
+											class="card-text text-center mb-3"
+											style="display: flex; gap: 100px; justify-content: center"
+										>
+											<span class="text-p">$400</span>
+											<span class="text-muted small"> ⭐3.5</span>
+										</p>
+										<hr />
+										<a href="#" class="btn btn-primary w-100 mt-auto"
+											>Agregar al carrito</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Controles -->
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselAtletismo"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon"></span>
+					<span class="visually-hidden">Anterior</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselAtletismo"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon"></span>
+					<span class="visually-hidden">Siguiente</span>
+				</button>
+			</div>
+		</section>
 
-    <!-- Carrusel Basketball -->
-    <section id="productos-basketball" class="productos-categoria container my-5">
-      <div class="text-center mb-4">
-        <h2>Basketball</h2>
-      </div>
-      <div id="carouselBasketball" class="carousel slide carousel-dark">
-        <div class="carousel-inner">
-          <!-- Primer grupo: 3 productos -->
-          <div class="carousel-item active">
-            <div class="row g-4 justify-content-center">
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://contents.mediadecathlon.com/p2879501/k$5cb026f63716fb3fab53038700780172/picture.jpg?format=auto&f=969x0" class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">basketball: balon oficial</h5>
-                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                   
-                       <span class="text-muted small"> ⭐Num estrellas</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://th.bing.com/th/id/R.874298276998f8ff492214260f6ddbab?rik=U3Rvg1bzTMtr8Q&pid=ImgRaw&r=0 " class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">tenis basketball</h5>
-                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                   
-                       <span class="text-muted small"> ⭐Num estrellas</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://tse3.mm.bing.net/th/id/OIP.NQSpF-7bwagPOJBtdnFp1wAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Muñequeras deportivas</h5>
-                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                   
-                       <span class="text-muted small"> ⭐Num estrellas</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Segundo grupo: 2 productos -->
-          <div class="carousel-item">
-            <div class="row g-4 justify-content-center">
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://image.made-in-china.com/2f0j00RNLiEqMhEcom/Basketball-Uniform-Suit-Men-prime-S-Custom-Printing-Jersey-Sports-Quick-Drying-Vest-Custom-Made-Training-Competition-Team-Uniforms-Custom-Made.jpg" class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Uniforme deportivo</h5>
-                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                   
-                       <span class="text-muted small"> ⭐Num estrellas</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Producto 5</h5>
-                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                      <span class="text-warning">estrellas</span> 
-                       <span class="text-muted small"> ⭐Num estrellas</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Controles -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselBasketball"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselBasketball"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
-    </section>
+		<section id="contacto_datos">
+			<h2
+				style="
+					display: flex;
+					justify-content: center;
+					margin-top: 100px;
+					margin-bottom: 50px;
+					color: #088dec;
+				"
+			>
+				Datos de Contacto
+			</h2>
+			<div id="contacto">
+				<!-- Redaccion correo -->
+				<div class="container">
+					<div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label"
+							>Correo Electronico</label
+						>
+						<input
+							type="email"
+							class="form-control"
+							id="exampleFormControlInput1"
+							placeholder="name@example.com"
+						/>
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlTextarea1" class="form-label"
+							>Escribe aqui tus comentarios, aclaraciones y sugerencias</label
+						>
+						<textarea
+							class="form-control"
+							id="exampleFormControlTextarea1"
+							rows="3"
+							style="field-sizing: content; resize: none; min-height: 100px"
+						></textarea>
+					</div>
+					<div class="col-auto" style="display: flex; justify-content: center">
+						<button type="submit" class="btn btn-primary mb-3">Enviar</button>
+					</div>
+				</div>
 
+				<!-- Datos de contacto -->
+				<div class="container">
+					<div class="mb-3">
+						<div class="text-center p-3">
+							📞<strong>Teléfono:</strong>
+							<p>+52 312 1111 1111</p>
+						</div>
+						<div class="text-center">
+							📧<strong>Correo:</strong>
+							<p>athletic_pro@correo.com</p>
+						</div>
+						<div class="text-center">
+							📍<strong>Ubicación:</strong>
+							<p>Zapopan, Jalisco</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<!-- Footer -->
+		<footer class="text-center mt-5 p-3" style="background-color: #f1f1f1">
+			<p>© 2026 Athletic Pro</p>
 
+			<div class="d-flex justify-content-center gap-3 mt-3">
+				<a href="#productos_general" class="footer-link">Productos</a>
+				<a href="#contacto_datos" class="footer-link">Contacto</a>
+				<a href="#" class="footer-link">Aviso de privacidad</a>
+			</div>
+		</footer>
 
-    <!-- Carrusel Atletismo -->
-    <section id="productos-atletismo" class="productos-categoria container my-5">
-      <div class="text-center mb-4">
-        <h2>Atletismo</h2>
-      </div>
-      <div id="carouselAtletismo" class="carousel slide carousel-dark">
-        <div class="carousel-inner">
-          <!-- Primer grupo: 3 productos -->
-          <div class="carousel-item active">
-            <div class="row g-4 justify-content-center">
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ_1-sHlBw240gvExlAljE1mkvChZm3MM2D9XH5QdDnFuRQg_rwy1bFVO2kG68MhVkHO0cq2i7jctj85CXJinDg0wxE2HYyJGySdTWzXoE44zsnXSJ9gEAIYA" class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Zapatillas Con Placa De Fibra De Carbono</h5>
-                    <p class="card-text">Composición del exterior: 80% lienzo
-                                        Composición de la suela: 40% de poliuretano
-                                        Materiales de palma: Espuma EVA</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                      <span class="text-p">$530 </span>
-                
-                       <span class="text-muted small"> ⭐4.1</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://http2.mlstatic.com/D_NQ_NP_2X_774581-MLA112984655578_072026-F.webp" class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Smartwatch Llamadas GPS Monitoreo Salud</h5>
-                    <p class="card-text">Brújula, GPS (Sistema de Posicionamiento Global), 
-                                        ritmo cardiaco, oxigeno en sangre, monitoreo de sueno, sensor de gravedad, altavoz, 
-                                        microfono y motor de vibracion.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                      <span class="text-p">$456</span>
-                      <span class="text-muted">⭐ 4.8</span> 
-                
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://www.pangeamovements.com/cdn/shop/files/773b3ca469_480x.webp?v=1786130161" class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">SOAR Sudadera Running</h5>
-                    <p class="card-text">Mañanas frías. Arranques rápidos. El Tempo Top está diseñado para rendir en el frío: 
-                                        ligero, ajustado al cuerpo y con alta transpirabilidad cuando el ritmo sube.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                   
-                       <span class="text-muted small"> ⭐4.0</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Segundo grupo: 2 productos -->
-          <div class="carousel-item">
-            <div class="row g-4 justify-content-center">
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://m.media-amazon.com/images/I/51JMCcVxN9L._AC_SX679_.jpg" class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Cinturón para Correr con Botella de Agua</h5>
-                    <p class="card-text">Este cinturón para correr está hecho de Neopreno, es un tejido ligero que respira bien mientras que todavía logra mantener un gran estiramiento. </p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                   
-                       <span class="text-muted small"> ⭐3.8</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagen del producto">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Producto 5</h5>
-                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
-                    <hr>
-                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
-                      <span class="text-warning">estrellas</span> 
-                       <span class="text-muted small"> ⭐Num estrellas</span>
-                    </p>
-                    <hr>
-                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Controles -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselAtletismo"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselAtletismo"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
-    </section>
-
-
-
-
-  <!-- Footer -->
-    <footer class="text-center mt-5 p-3" style="background-color:#f1f1f1;">
-      <p>© 2026 Athletic Pro</p>
-      <p>Este sitio fue desarrollado con apoyo de herramientas de IA para optimizar diseño y accesibilidad, siempre bajo revisión humana para garantizar un uso responsable.</p>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+		<!-- Scripts -->
+		<script src="script.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
