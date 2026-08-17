@@ -46,7 +46,7 @@
         </div>
       </div>
     </nav>
-
+    
     <!-- Sección principal dividida -->
     <section class="container mt-5">
       <div class="row align-items-center">
@@ -55,12 +55,11 @@
           <h1 style="color:#088dec;">Encuentra tu pasión deportiva</h1>
           <p>Selecciona tu disciplina favorita y descubre productos diseñados para tu rendimiento.</p>
         </div>
-
         <!-- Imagen -->
         <div class="col-md-6 text-center">
-          <img src="https://cdn.pixabay.com/photo/2016/11/29/09/32/sport-1867018_1280.jpg"
-               alt="Deportes"
-               class="img-fluid rounded shadow-sm" />
+          <img src="Img\deporte.png"
+            alt="Deportes"
+            class="img-fluid rounded shadow-sm" />
         </div>
       </div>
     </section>
@@ -76,30 +75,7 @@
         <a href="#basketball" class="btn btn-outline-danger m-2">Basketball</a>
       </div>
     </main>
-
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tienda Deportiva - Catálogo por Disciplinas</title>
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-  <style>
-    .card-category {
-      transition: transform 0.2s ease, shadow 0.2s ease;
-    }
-    .card-category:hover {
-      transform: translateY(-4px);
-    }
-  </style>
-</head>
-<body class="bg-light">
-
   
-
   <!-- CONTENEDOR PRINCIPAL -->
   <div class="container my-5">
     
@@ -108,9 +84,7 @@
       <h1 class="fw-bold text-uppercase display-6"></h1>
       <p class="text-muted">Encuentra los mejores productos seleccionados para cada disciplina deportiva.</p>
     </div>
-
     <div class="row g-4">
-
       <!-- CATEGORÍA: PATINAJE (VERDE) -->
       <div id="patinaje" class="col-12 col-md-6 col-lg-3">
         <div class="card h-100 border-0 shadow-sm card-category">
@@ -139,13 +113,12 @@
             </ul>
           </div>
           <div class="card-footer bg-transparent border-0 pb-3">
-            <a href="#" class="btn btn-outline-success btn-sm w-100 fw-semibold">Ver Productos</a>
+              <a href="#productos-patinaje" class="btn btn-outline-success btn-sm w-100 fw-semibold">Ver Productos</a>          
           </div>
         </div>
       </div>
-
       <!-- CATEGORÍA: ATLETISMO (AMARILLO) -->
-      <div id="atletismo"class="col-12 col-md-6 col-lg-3">
+      <div id="atletismo" class="col-12 col-md-6 col-lg-3">
         <div class="card h-100 border-0 shadow-sm card-category">
           <div class="card-header bg-warning text-dark py-3 text-center">
             <i class="fs-2 d-block mb-1">⏱️</i>
@@ -172,13 +145,12 @@
             </ul>
           </div>
           <div class="card-footer bg-transparent border-0 pb-3">
-            <a href="#" class="btn btn-outline-warning text-dark btn-sm w-100 fw-semibold">Ver Productos</a>
+            <a href="#productos-atletismo" class="btn btn-outline-warning text-dark btn-sm w-100 fw-semibold">Ver Productos</a>
           </div>
         </div>
       </div>
-
       <!-- CATEGORÍA: BASKETBALL (ROJO) -->
-      <div id="basketball"class="col-12 col-md-6 col-lg-3">
+      <div id="basketball" class="col-12 col-md-6 col-lg-3">
         <div class="card h-100 border-0 shadow-sm card-category">
           <div class="card-header bg-danger text-white py-3 text-center">
             <i class="fs-2 d-block mb-1">🏀</i>
@@ -205,13 +177,12 @@
             </ul>
           </div>
           <div class="card-footer bg-transparent border-0 pb-3">
-            <a href="#" class="btn btn-outline-danger btn-sm w-100 fw-semibold">Ver Productos</a>
+            <a href="#productos-basketball" class="btn btn-outline-danger btn-sm w-100 fw-semibold">Ver Productos</a>
           </div>
         </div>
       </div>
-
       <!-- CATEGORÍA: NATACIÓN (AZUL) -->
-      <div id="natacion"class="col-12 col-md-6 col-lg-3">
+      <div id="natacion" class="col-12 col-md-6 col-lg-3">
         <div class="card h-100 border-0 shadow-sm card-category">
           <div class="card-header bg-primary text-white py-3 text-center">
             <i class="fs-2 d-block mb-1">🏊🏻‍♂️</i>
@@ -238,17 +209,516 @@
             </ul>
           </div>
           <div class="card-footer bg-transparent border-0 pb-3">
-            <a href="#" class="btn btn-outline-primary btn-sm w-100 fw-semibold">Ver Productos</a>
+            <a href="#productos-natacion" class="btn btn-outline-primary btn-sm w-100 fw-semibold">Ver Productos</a>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
- 
+  <!-- Productos - Carruseles -->
 
-   <!-- Footer -->
+    <!-- Carrusel Patinaje -->
+    <section id="productos-patinaje" class="productos-categoria container my-5">
+      <div class="text-center mb-4">
+        <h2>Patinaje</h2>
+      </div>
+      <div id="carouselPatinaje" class="carousel slide carousel-dark">
+        <div class="carousel-inner">
+          <!-- Primer grupo: 3 productos -->
+          <div class="carousel-item active">
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://m.media-amazon.com/images/I/81MduxuxPaL._AC_SX679_.jpg " class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Patines</h5>
+                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                      <span class="text-p">$1200</span>
+                      <span class="text-muted small"> ⭐4.8</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqX6ZGJn0vCaN_aymgdtz6H9Z3jgsZhLhai6tj01V-0A&s=10 " class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Ruedas</h5>
+                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                      <span class="text-p">$800</span>
+                      <span class="text-muted small"> ⭐5.0</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd8Od2StjVcmyLGL1b3jLkGmj8cod-RpiTCqrjgm9pHQ&s=10 " class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Rodilleras y coderas</h5>
+                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                      <span class="text-p">$456</span>
+                      <span class="text-muted small"> ⭐4.8</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Segundo grupo: 2 productos -->
+          <div class="carousel-item">
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://m.media-amazon.com/images/I/51Uejz-7XJL._AC_UF894,1000_QL80_.jpg" class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Casco</h5>
+                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                      <span class="text-p">$900</span>
+                      <span class="text-muted small"> ⭐4.0</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Producto 5</h5>
+                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                      <span class="text-p">$600</span>
+                      <span class="text-muted small"> ⭐Num estrellas</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controles -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselPatinaje"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselPatinaje"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+
+
+    <!-- Carrusel Natación -->
+    <section id="productos-natacion" class="productos-categoria container my-5">
+      <div class="text-center mb-4">
+        <h2>Natación</h2>
+      </div>
+      <div id="carouselNatacion" class="carousel slide carousel-dark">
+        <div class="carousel-inner">
+          <!-- Primer grupo: 3 productos -->
+          <div class="carousel-item active">
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNt7ARlQqNOhkS2HzTXWEIH00INWZjPM-VO7OUAG3RTw&s=10" class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Goggles antiempañantes</h5>
+                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                   
+                       <span class="text-muted small"> ⭐Num estrellas</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGF9BCRH0_TSl227Fmb5Iro7lDzuwnZXs-AXh0lQ53MQ&s=10" class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Aletas de natacion</h5>
+                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                      <span class="text-warning">estrellas</span> 
+                       <span class="text-muted small"> ⭐Num estrellas</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGuOgBLuau9T3H9RpJCNHlPc1U80DkQeE0B-l8OFJa1w&s=10" class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Traje de baño</h5>
+                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                   
+                       <span class="text-muted small"> ⭐Num estrellas</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Segundo grupo: 2 productos -->
+          <div class="carousel-item">
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwOFog6Fpu2L55TL8AaQebBj9KqIUca6N6FThDkYuCAw&s=10" class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Toallas natacion</h5>
+                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                      <span class="text-warning">estrellas</span> 
+                       <span class="text-muted small"> ⭐Num estrellas</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Producto 5</h5>
+                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                      <span class="text-warning">estrellas</span> 
+                       <span class="text-muted small"> ⭐Num estrellas</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controles -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselNatacion"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselNatacion"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+
+
+
+    <!-- Carrusel Basketball -->
+    <section id="productos-basketball" class="productos-categoria container my-5">
+      <div class="text-center mb-4">
+        <h2>Basketball</h2>
+      </div>
+      <div id="carouselBasketball" class="carousel slide carousel-dark">
+        <div class="carousel-inner">
+          <!-- Primer grupo: 3 productos -->
+          <div class="carousel-item active">
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://contents.mediadecathlon.com/p2879501/k$5cb026f63716fb3fab53038700780172/picture.jpg?format=auto&f=969x0" class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">basketball: balon oficial</h5>
+                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                   
+                       <span class="text-muted small"> ⭐Num estrellas</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://th.bing.com/th/id/R.874298276998f8ff492214260f6ddbab?rik=U3Rvg1bzTMtr8Q&pid=ImgRaw&r=0 " class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">tenis basketball</h5>
+                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                   
+                       <span class="text-muted small"> ⭐Num estrellas</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://tse3.mm.bing.net/th/id/OIP.NQSpF-7bwagPOJBtdnFp1wAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Muñequeras deportivas</h5>
+                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                   
+                       <span class="text-muted small"> ⭐Num estrellas</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Segundo grupo: 2 productos -->
+          <div class="carousel-item">
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://image.made-in-china.com/2f0j00RNLiEqMhEcom/Basketball-Uniform-Suit-Men-prime-S-Custom-Printing-Jersey-Sports-Quick-Drying-Vest-Custom-Made-Training-Competition-Team-Uniforms-Custom-Made.jpg" class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Uniforme deportivo</h5>
+                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                   
+                       <span class="text-muted small"> ⭐Num estrellas</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Producto 5</h5>
+                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                      <span class="text-warning">estrellas</span> 
+                       <span class="text-muted small"> ⭐Num estrellas</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controles -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselBasketball"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselBasketball"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+
+
+
+    <!-- Carrusel Atletismo -->
+    <section id="productos-atletismo" class="productos-categoria container my-5">
+      <div class="text-center mb-4">
+        <h2>Atletismo</h2>
+      </div>
+      <div id="carouselAtletismo" class="carousel slide carousel-dark">
+        <div class="carousel-inner">
+          <!-- Primer grupo: 3 productos -->
+          <div class="carousel-item active">
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ_1-sHlBw240gvExlAljE1mkvChZm3MM2D9XH5QdDnFuRQg_rwy1bFVO2kG68MhVkHO0cq2i7jctj85CXJinDg0wxE2HYyJGySdTWzXoE44zsnXSJ9gEAIYA" class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Zapatillas Con Placa De Fibra De Carbono</h5>
+                    <p class="card-text">Composición del exterior: 80% lienzo
+                                        Composición de la suela: 40% de poliuretano
+                                        Materiales de palma: Espuma EVA</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                      <span class="text-p">$530 </span>
+                
+                       <span class="text-muted small"> ⭐4.1</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://http2.mlstatic.com/D_NQ_NP_2X_774581-MLA112984655578_072026-F.webp" class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Smartwatch Llamadas GPS Monitoreo Salud</h5>
+                    <p class="card-text">Brújula, GPS (Sistema de Posicionamiento Global), 
+                                        ritmo cardiaco, oxigeno en sangre, monitoreo de sueno, sensor de gravedad, altavoz, 
+                                        microfono y motor de vibracion.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                      <span class="text-p">$456</span>
+                      <span class="text-muted">⭐ 4.8</span> 
+                
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://www.pangeamovements.com/cdn/shop/files/773b3ca469_480x.webp?v=1786130161" class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">SOAR Sudadera Running</h5>
+                    <p class="card-text">Mañanas frías. Arranques rápidos. El Tempo Top está diseñado para rendir en el frío: 
+                                        ligero, ajustado al cuerpo y con alta transpirabilidad cuando el ritmo sube.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                   
+                       <span class="text-muted small"> ⭐4.0</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Segundo grupo: 2 productos -->
+          <div class="carousel-item">
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://m.media-amazon.com/images/I/51JMCcVxN9L._AC_SX679_.jpg" class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Cinturón para Correr con Botella de Agua</h5>
+                    <p class="card-text">Este cinturón para correr está hecho de Neopreno, es un tejido ligero que respira bien mientras que todavía logra mantener un gran estiramiento. </p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                   
+                       <span class="text-muted small"> ⭐3.8</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagen del producto">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Producto 5</h5>
+                    <p class="card-text">Descripción breve del artículo para rellenar el contenido de la tarjeta.</p>
+                    <hr>
+                    <p id="precio" class="card-text text-center mb-3" style="display: flex; gap: 100px; justify-content: center;">
+                      <span class="text-warning">estrellas</span> 
+                       <span class="text-muted small"> ⭐Num estrellas</span>
+                    </p>
+                    <hr>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">Agregar al carrito</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controles -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselAtletismo"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselAtletismo"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+
+
+
+  <!-- Footer -->
     <footer class="text-center mt-5 p-3" style="background-color:#f1f1f1;">
       <p>© 2026 Athletic Pro</p>
       <p>Este sitio fue desarrollado con apoyo de herramientas de IA para optimizar diseño y accesibilidad, siempre bajo revisión humana para garantizar un uso responsable.</p>
@@ -263,4 +733,3 @@
     ></script>
   </body>
 </html>
-

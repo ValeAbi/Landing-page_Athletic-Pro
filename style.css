@@ -1,0 +1,59 @@
+/* CONFIGURACIÓN GENERAL */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* SECCIONES DE PRODUCTOS */
+
+.productos-categoria {
+	min-height: 500px;
+}
+
+
+/* CARDS */
+
+.productos-categoria .card {
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+
+/* ESPACIO PARA IMÁGENES */
+
+.productos-categoria .card-img-placeholder {
+	height: 220px;
+	background-color: #e9ecef;
+}
+
+
+/* CARRUSEL */
+
+.productos-categoria .carousel {
+	padding: 0 60px;
+}
+
+
+/* CONTROLES DEL CARRUSEL */
+
+.productos-categoria .carousel-control-prev,
+.productos-categoria .carousel-control-next {
+	width: 50px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+	.productos-categoria .carousel {
+		padding: 0 20px;
+	}
+
+	.productos-categoria .card-img-placeholder {
+		height: 200px;
+	}
+
+}
