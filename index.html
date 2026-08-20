@@ -27,7 +27,11 @@
 			data-bs-theme="light"
 		>
 			<div class="container-fluid">
-				<a class="navbar-brand" style="color: aliceblue" href="#">
+				<a
+					class="navbar-brand"
+					style="color: aliceblue; font-size: x-large"
+					href="index.html"
+				>
 					<img
 						src="Img/logo.png"
 						alt="Logo"
@@ -51,25 +55,46 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link active" href="#" style="color: aliceblue"
-								>Inicio</a
-							>
-						</li>
-						<li class="nav-item">
 							<a
 								class="nav-link"
 								href="#productos_general"
-								style="color: aliceblue"
-								>Productos</a
-							>
+								style="color: aliceblue; font-size: large"
+								>Productos
+							</a>
 						</li>
 						<li class="nav-item">
 							<a
 								class="nav-link"
 								href="#contacto_datos"
-								style="color: aliceblue"
-								>Contacto</a
-							>
+								style="color: aliceblue; font-size: large"
+								>Contacto
+							</a>
+						</li>
+						<!-- Cuadro de búsqueda -->
+						<form class="d-flex ms-3">
+							<input
+								class="form-control me-2"
+								type="search"
+								placeholder="Buscar productos..."
+								aria-label="Buscar"
+							/>
+							<button class="btn btn-outline-light" type="submit">🔍</button>
+						</form>
+					</ul>
+
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a
+								href="carrito.html"
+								class="nav-link"
+								style="color: aliceblue; font-size: large"
+								>Carrito compras 🛒
+								<span
+									id="carrito-badge"
+									class="position-absolute start-75 translate-middle badge rounded-pill bg-danger d-none"
+									>!
+								</span>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -346,7 +371,7 @@
 										<h5 class="card-title">Patines</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											Los patines de alto rendimiento están diseñados para
 											ofrecer estabilidad, control y comodidad en cada
@@ -362,9 +387,28 @@
 											<span class="text-muted small"> ⭐4.8</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_1"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(1)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -379,7 +423,7 @@
 										<h5 class="card-title">Ruedas</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											Las ruedas de repuesto están diseñadas para mantener el
 											máximo rendimiento y durabilidad de tus patines.
@@ -394,9 +438,27 @@
 											<span class="text-muted small"> ⭐5.0</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_2"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(2)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -411,7 +473,7 @@
 										<h5 class="card-title">Rodilleras y coderas</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											El kit de protección incluye rodilleras, coderas y
 											muñequeras ergonómicas que garantizan seguridad sin
@@ -427,9 +489,27 @@
 											<span class="text-muted small"> ⭐4.8</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_3"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(3)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -449,7 +529,7 @@
 										<h5 class="card-title">Casco</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											El casco de seguridad para patinaje está diseñado para
 											ofrecer máxima protección y confort durante tus
@@ -465,9 +545,27 @@
 											<span class="text-muted small"> ⭐4.0</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_4"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(4)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -482,7 +580,7 @@
 										<h5 class="card-title">Maleta para Patines</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											La bolsa para patines está diseñada para transportar tu
 											equipo con comodidad y estilo.
@@ -497,9 +595,27 @@
 											<span class="text-muted small"> ⭐4.6</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_5"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(5)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -549,7 +665,7 @@
 										<h5 class="card-title">Goggles</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											Los goggles antiempañantes ofrecen una visión clara y
 											nítida bajo el agua gracias a su tecnología de lentes
@@ -565,9 +681,27 @@
 											<span class="text-muted small"> ⭐4.5</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_6"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(6)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -582,7 +716,7 @@
 										<h5 class="card-title">Aletas de natacion</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											Las aletas de entrenamiento están diseñadas para mejorar
 											la técnica y fortalecer los músculos de las piernas.
@@ -597,9 +731,27 @@
 											<span class="text-muted small"> ⭐4.8</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_7"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(7)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -614,7 +766,7 @@
 										<h5 class="card-title">Traje de baño</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											El traje de baño deportivo combina rendimiento y confort
 											con un diseño ajustado que reduce la resistencia al agua.
@@ -629,9 +781,27 @@
 											<span class="text-muted small"> ⭐4</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_8"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(8)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -651,7 +821,7 @@
 										<h5 class="card-title">Toallas natacion</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											La toalla de microfibra para natación ofrece un secado
 											rápido y eficiente gracias a su tejido ultraligero y
@@ -667,9 +837,27 @@
 											<span class="text-muted small"> ⭐4.6</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_9"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(9)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -684,7 +872,7 @@
 										<h5 class="card-title">Gorro de Natacion</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											El gorro de natación está diseñado para mejorar la
 											hidrodinámica y proteger el cabello del cloro.
@@ -699,9 +887,27 @@
 											<span class="text-muted small"> ⭐4.2</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_10"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(10)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -751,10 +957,10 @@
 										alt="Imagen del producto"
 									/>
 									<div class="card-body d-flex flex-column">
-										<h5 class="card-title">basketball: balon oficial</h5>
+										<h5 class="card-title">Basketball: balon oficial</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											El balón oficial de basketball está diseñado para ofrecer
 											un agarre superior y un rebote constante en cada jugada.
@@ -769,9 +975,27 @@
 											<span class="text-muted small"> ⭐5</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_11"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(11)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -783,10 +1007,10 @@
 										alt="Imagen del producto"
 									/>
 									<div class="card-body d-flex flex-column">
-										<h5 class="card-title">tenis basketball</h5>
+										<h5 class="card-title">Tenis basketball</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											Los tenis de basketball combinan amortiguación,
 											estabilidad y estilo para maximizar tu rendimiento en la
@@ -802,9 +1026,27 @@
 											<span class="text-muted small"> ⭐4.6</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_12"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(12)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -819,7 +1061,7 @@
 										<h5 class="card-title">Muñequeras deportivas</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											Las muñequeras deportivas son el accesorio esencial para
 											mantener la comodidad y el rendimiento durante el juego.
@@ -834,9 +1076,27 @@
 											<span class="text-muted small"> ⭐4.3</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_13"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(13)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -856,7 +1116,7 @@
 										<h5 class="card-title">Uniforme deportivo</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											El uniforme deportivo para basketball combina comodidad,
 											rendimiento y estilo en cada partido.
@@ -871,9 +1131,27 @@
 											<span class="text-muted small"> ⭐4.1</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_14"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(14)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -888,7 +1166,7 @@
 										<h5 class="card-title">Rodilleras Basketball</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											Las rodilleras deportivas están diseñadas para brindar
 											protección y soporte durante los entrenamientos y partidos
@@ -904,9 +1182,27 @@
 											<span class="text-muted small"> ⭐4.7</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_15"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(15)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -961,7 +1257,7 @@
 										</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											Composición del exterior: 80% lienzo Composición de la
 											suela: 40% de poliuretano Materiales de palma: Espuma EVA
@@ -976,9 +1272,27 @@
 											<span class="text-muted small"> ⭐4.1</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_16"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(16)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -996,7 +1310,7 @@
 										</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											Brújula, GPS (Sistema de Posicionamiento Global), ritmo
 											cardiaco, oxigeno en sangre, monitoreo de sueno, sensor de
@@ -1012,9 +1326,27 @@
 											<span class="text-muted">⭐ 4.8</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_17"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(17)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -1030,7 +1362,7 @@
 										<h5 class="card-title">SOAR Sudadera Running</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											Mañanas frías. Arranques rápidos. El Tempo Top está
 											diseñado para rendir en el frío: ligero, ajustado al
@@ -1046,9 +1378,27 @@
 											<span class="text-muted small"> ⭐4.0</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_18"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(18)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -1070,7 +1420,7 @@
 										</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											Este cinturón para correr está hecho de Neopreno, es un
 											tejido ligero que respira bien mientras que todavía logra
@@ -1086,9 +1436,27 @@
 											<span class="text-muted small"> ⭐3.8</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_19"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(19)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>
@@ -1105,7 +1473,7 @@
 										</h5>
 										<p
 											class="card-text"
-											style="height: 150px; margin-top: 10px"
+											style="height: 130px; margin-top: 10px"
 										>
 											Los lentes deportivos están diseñados para ofrecer
 											protección, comodidad y rendimiento durante tus
@@ -1121,9 +1489,27 @@
 											<span class="text-muted small"> ⭐3.5</span>
 										</p>
 										<hr />
-										<a href="#" class="btn btn-primary w-100 mt-auto"
-											>Agregar al carrito</a
+										<!-- Elegir la cantidad -->
+										<div class="input-group mb-3">
+											<span class="input-group-text" style="margin-right: 5px">
+												Cantidad
+											</span>
+											<input
+												type="number"
+												id="cantidad_20"
+												class="form-control"
+												value="1"
+												min="1"
+											/>
+										</div>
+
+										<!-- Boton para agregar al carrito cantidad deseada -->
+										<button
+											class="btn btn-primary w-100 mt-auto"
+											onclick="agregarCarrito(20)"
 										>
+											Agregar al carrito
+										</button>
 									</div>
 								</div>
 							</div>

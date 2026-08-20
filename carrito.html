@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Athletic Pro</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<!-- NavBar -->
+		<nav
+			class="navbar navbar-expand-lg"
+			style="
+				background-color: #088dec;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: 1000;
+			"
+			data-bs-theme="light"
+		>
+			<div class="container-fluid">
+				<a
+					class="navbar-brand"
+					style="color: aliceblue; font-size: x-large"
+					href="index.html"
+				>
+					<img
+						src="Img/logo.png"
+						alt="Logo"
+						width="50"
+						height="37"
+						class="d-inline-block align-text"
+					/>
+					Athletic Pro
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="#productos_general"
+								style="color: aliceblue; font-size: large"
+								>Productos
+							</a>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="#contacto_datos"
+								style="color: aliceblue; font-size: large"
+								>Contacto
+							</a>
+						</li>
+
+						<!-- Cuadro de búsqueda -->
+						<form class="d-flex ms-3">
+							<input
+								class="form-control me-2"
+								type="search"
+								placeholder="Buscar productos..."
+								aria-label="Buscar"
+							/>
+							<button class="btn btn-outline-light" type="submit">🔍</button>
+						</form>
+					</ul>
+
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a
+								href="carrito.html"
+								class="nav-link"
+								style="color: aliceblue; font-size: large"
+								>Carrito compras 🛒
+								<span
+									id="carrito-badge"
+									class="position-absolute start-75 translate-middle badge rounded-pill bg-danger d-none"
+									>!
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Presentacion del producto -->
+		<!-- Sección Carrito -->
+		<div class="container mt-5">
+			<div class="row">
+				<!-- Lista de productos -->
+				<div class="col-md-8">
+					<h3 class="mb-4" style="margin-top: 50px">🛒 Carrito de compras</h3>
+					<div id="lista-carrito" class="d-flex flex-column gap-3"></div>
+				</div>
+
+				<!-- Total a pagar -->
+				<div class="col-md-4" style="margin-top: 108px">
+					<div class="card shadow-sm p-3">
+						<h4>Total a pagar</h4>
+						<p id="total" class="fs-4 fw-bold text-success">$0</p>
+						<button class="btn btn-success w-100">Finalizar compra</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
